@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playwrite DE Grund';
+}
+
+body {
+    background: url("https://picsum.photos/1600/900");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    max-width: 600px; 
+}
+
+button {
+    padding: 15px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%; 
+    max-width: 150px; }
+   
+
+button:hover {
+    opacity: 0.7;
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+#human-score {
+    color: rgb(255, 7, 210);}
+
+#robo-score {
+    color:rgb(132, 1, 255);
+}
+#rock {
+    background-color: rgb(255, 7, 210);
+}
+
+#paper {
+    background-color: rgb(132, 1, 255);
+}
+
+#scissors {
+    background-color: aqua;
+}
+@media (max-width: 768px) {
+    button {
+        font-size: 40px; 
+    }
+
+    .buttons {
+        flex-direction: column; 
+        align-items: center; 
+}
+
+
+@media (max-width: 480px) {
+    button {
+        font-size: 30px; 
+    }
+
+    .buttons {
+        gap: 10px; 
+    }
+}}
